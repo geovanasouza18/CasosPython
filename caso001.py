@@ -1,0 +1,7 @@
+caso01 = input('Digite algo: ')
+print(type(caso01))
+print('É apenas numérico?',caso01.isnumeric())
+print('É só letras?',caso01.isalpha())
+print('Mistura letras e números?', caso01.isalnum())
+print('É apenas espaço em branco?', caso01.isspace())
+print('Pode ser usado como nome de uma variável Python?', caso01.isidentifier())
