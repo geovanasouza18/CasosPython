@@ -2,6 +2,7 @@ import time
 num1 = int(input('Digite um número: '))
 num2 = int(input('Digite outro número: '))
 time.sleep(1)
+
 print("\033[33mBem-vindo ao Menu de Investigação\033[0m")
 print("\033[36m 1- Somar pistas\033[0m")
 print("\033[35m 2 - Subtrair evidências\033[0m")
