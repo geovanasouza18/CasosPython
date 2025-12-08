@@ -44,3 +44,10 @@ while True:
         for topico, horas, obs in diario:
             total += horas
         print(f'Total das horas estudadas: {total}')
+    if opcao == 4:
+        diario2 = []
+        for topico, horas, obs in diario:
+            print(f'Tópicos estudados: {topico}')
+        if topico not in diario2:
+
+
