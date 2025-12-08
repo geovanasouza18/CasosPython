@@ -6,7 +6,6 @@ print(f"{titulo:^50}")  # centralizado em 40 colunas
 print(linha)
 
 diario = []
-topico = ()
 opcao = 0
 while True:
     print('''
@@ -18,4 +17,26 @@ while True:
     ''')
     opcao = int(input('Digite uma dessas opções: '))
     if opcao == 1:
-        topico =
+        topico = input('Digite o tema estudado: ').strip()
+
+        if topico == "":
+            print("Erro: o tópico não pode ser vazio 🚫")
+        else:
+            try:
+                horas = int(input('Digite a quantidade de horas estudadas: '))
+                if horas < 0:
+                    print("Erro: horas não podem ser negativas ⏳🚫")
+                else:
+                    obs = input('Digite as observações da aula estudada: ')
+                    registro = (topico, horas, obs)
+                    diario.append(registro)
+                    print("Registro salvo ✅", registro)
+            except ValueError:
+                print("Erro: horas inválidas ❌")
+    if opcao == 2:
+        for topico, horas, obs in diario:
+            print(f"Tópico: {topico}")
+            print(f"Horas estudadas: {horas}")
+            print(f"Observações: {obs}")
+            print("-" * 30)
+    if opcao == 3:
