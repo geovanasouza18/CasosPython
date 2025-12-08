@@ -40,3 +40,7 @@ while True:
             print(f"Observações: {obs}")
             print("-" * 30)
     if opcao == 3:
+        total = 0
+        for topico, horas, obs in diario:
+            total += horas
+        print(f'Total das horas estudadas: {total}')
