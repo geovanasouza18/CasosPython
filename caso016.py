@@ -45,9 +45,20 @@ while True:
             total += horas
         print(f'Total das horas estudadas: {total}')
     if opcao == 4:
-        diario2 = []
+        topicosUnicos = []
+
         for topico, horas, obs in diario:
-            print(f'Tópicos estudados: {topico}')
-        if topico not in diario2:
+            if topico not in topicosUnicos:
+                topicosUnicos.append(topico)
+
+        print("Tópicos estudados:")
+        for t in topicosUnicos:
+            print(f"- {t}")
+    if opcao == 5:
+        break
+
+print(linha)
+print(f"Saindo.....")  # centralizado em 40 colunas
+print(linha)
 
 
