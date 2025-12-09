@@ -50,14 +50,23 @@ while True:
         for titulo, categoria, status in acervo:
             if status == 'lido':
                 total_lido += 1
-            else:
-                print('Você não concluiu nenhuma leitura ainda.')
-        print(f'Livro(s) lido(s): {total_lido}')
+        if total_lido == 0:
+            print('Você não concluiu nenhuma leitura ainda.')
+        else:
+            print(f'Livro(s) lido(s): {total_lido}')
 
     elif opcao == 4:
+        categoria_extra = list()
+        for titulo, categoria, status in acervo:
+            if categoria not in categoria_extra:
+                categoria_extra.append(categoria)
+        print('CATEGORIA')
+        print(linha)
+        for c in categoria_extra:
+            print(f'- {c}')
 
-    # elif opcao == 5:
-    #     break
+    elif opcao == 5:
+        break
 
 print(f'Saindo do programa...')
 print(linha)
