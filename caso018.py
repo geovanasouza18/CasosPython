@@ -1,3 +1,10 @@
+titulo1 = "\033[36m Checklist da Investigação: Cadastro de Usuários \033[0m"
+linha = "\033[35m=\033[0m" * 50
+
+print(linha)
+print(f'{titulo1:^50}')
+print(linha)
+
 dados = list()
 opcao = ''
 while True:
@@ -47,7 +54,15 @@ while True:
                         print("Usuário cadastrado com sucesso ✅🎉")
 
     if opcao == 2:
+        if not dados:
+            print('A lista está vazia.')
+        else:
+            for nome, idade, email in dados:
+                print(f'Nome: {nome}')
+                print(f'Idade: {idade}')
+                print(f'Email: {email}')
+                print(linha)
+    if opcao == 3:
 
-    # if opcao == 3:
     # if opcao == 4:
     # if opcao == 5:
