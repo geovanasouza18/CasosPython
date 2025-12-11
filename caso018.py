@@ -63,6 +63,5 @@ while True:
                 print(f'Email: {email}')
                 print(linha)
     if opcao == 3:
-
-    # if opcao == 4:
+    if opcao == 4:
     # if opcao == 5:
