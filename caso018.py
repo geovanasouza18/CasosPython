@@ -63,5 +63,19 @@ while True:
                 print(f'Email: {email}')
                 print(linha)
     if opcao == 3:
-    if opcao == 4:
+        email_busca = input("Digite o email para buscar os dados: ")
+
+        encontrado = False
+
+        for nome, idade, email in dados:
+            if email_busca == email:
+                print(f"Nome: {nome}")
+                print(f"Idade: {idade}")
+                encontrado = True
+                break
+
+        if not encontrado:
+            print("Email não encontrado.")
+
+    #if opcao == 4:
     # if opcao == 5:
