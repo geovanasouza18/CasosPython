@@ -78,4 +78,9 @@ while True:
             print("Email não encontrado.")
 
     #if opcao == 4:
-    # if opcao == 5:
+
+    if opcao == 5:
+        break
+
+print(f'Saindo do programa...')
+print(linha)
