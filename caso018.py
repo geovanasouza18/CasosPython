@@ -12,8 +12,7 @@ while True:
     1 - Cadastrar usuário
     2 - Listar usuários
     3 - Buscar usuário
-    4 - Remover usuário
-    5 - Sair
+    4 - Sair
     ''')
     opcao = int(input('Digite uma dessas opções: '))
 
@@ -77,9 +76,7 @@ while True:
         if not encontrado:
             print("Email não encontrado.")
 
-    #if opcao == 4:
-
-    if opcao == 5:
+    if opcao == 4:
         break
 
 print(f'Saindo do programa...')
